@@ -17,6 +17,7 @@ def prediction(X, W, b):
 # update the weights and bias W, b, according to the perceptron algorithm,
 # and return W and b.
 def perceptronStep(X, y, W, b, learn_rate = 0.01):
+    # TODO vectorize
     # Fill in code
     for x,y in zip(X, y):
         y_pred = prediction(x, W, b)
@@ -52,10 +53,6 @@ if __name__=="__main__":
     X = df[:,:2]
     y = df[:,2]
     boundary_lines, W, b = trainPerceptronAlgorithm(X, y, learn_rate=0.01, num_epochs=25)
-    # print(X.shape, y.shape)
-    # print(X[:5,:])
-    # print(y[:5])
-    # perceptronStep
     print('after training...')
     total = correct = 0
     for x,y in zip(X, y):
