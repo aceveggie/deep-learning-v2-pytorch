@@ -4,3 +4,5 @@
 .udacity-pa
 .gitignore.swp
 .png
+*.pt
+*.p
