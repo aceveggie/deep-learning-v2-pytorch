@@ -5,3 +5,5 @@
 .gitignore.swp
 *.pt
 *.p
+*__pycache__*
+*.jpg*
